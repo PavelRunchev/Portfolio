@@ -1,0 +1,29 @@
+@import '../../public/sass/Settings/settings.breakpoints';
+
+
+.main-container {
+    padding: 20px 90px;
+    margin-top: 60px;
+
+    @include for-tablet-up {
+        padding: 20px 50px;
+    }
+
+    @include for-tablet-down {
+        padding: 20px 30px;
+    }
+
+    @include for-phone-only {
+        padding: 20px;
+    }
+
+    @include for-desktop-up {
+        padding: 20px 90px;
+    }
+
+}
+
+.chevron-circle-left {
+    font-size: 20px;
+    color: black;
+}
