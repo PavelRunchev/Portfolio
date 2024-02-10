@@ -22,6 +22,10 @@
         width: 100%;
     }
 
+    & .navbar {
+        box-shadow: none !important;
+    }
+
     & .icon-bars {
         color: hsl(0deg 0% 100%) !important;
     }
@@ -83,18 +87,19 @@
     & .environments-under-line {
         position: absolute;
         left: 0px;
-        top: 47px;
+        top: 38px;
         width: 100%;
         height: 2px;
-        opacity: 0;
+        opacity: 1;
         background-color: hsl(0deg 0% 95%) !important;
         transition: all 0.3s ease-out;
     }
    
     @include for-tablet-up {
-        & .nav-about-link:hover ~ .about-under-line {
-            opacity: 1;
-        }
+        //& .nav-about-link:hover ~ .about-under-line,
+        // & .nav-about-link:active ~ .about-under-line {
+        //     opacity: 1;
+        // }
     
         & .nav-education-link:hover ~ .education-under-line {
             opacity: 1;

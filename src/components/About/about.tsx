@@ -11,6 +11,7 @@ export default function About() {
 
     return (
         <div className='about-container'>
+            <hr id="about"></hr>
             <h1 className='about-firstname'>PAVEL <span className='about-family'>RUNCHEV</span></h1>
             <h3><MDBIcon fas icon='globe-europe' className='about-icons'/> BULGARIA</h3>
             <h3><MDBIcon fas icon='map-marker-alt' className='about-icons ml-1'/> GABROVO</h3>
@@ -22,7 +23,7 @@ export default function About() {
             <h3><MDBIcon fab icon='skype' className='about-icons'/> raidersgb</h3>
             <h3 className='font-weight-bold'><MDBIcon fas icon='desktop' className='about-icons'/> Full Stack Developer</h3>
             
-            <hr id="hr-about"></hr>
+           
 
             <div className='about-title-container mb-5'>
                 <h2 className='about-title mt-5'>ABOUT</h2>

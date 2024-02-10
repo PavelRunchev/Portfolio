@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import {
@@ -8,13 +8,24 @@ import {
 
 import './left-side-menu.scss';
 import image from '../../public/images/DSCF0009.png';
+import Loading from '../Loading/loading';
 
-export default class LeftSideMenu extends Component {
-    render() {
+export default function LeftSideMenu() {
+    const [loadingHide, setLoading] = useState(true);
+
+    useEffect(() => {
+        setLoading(true);
+        setTimeout(() => {
+          setLoading(false);
+        }, 500);
+    }, []);
+
         return (
             <div className='Left-Side-Menu-Container'>
                 <div className='image-container'>
-                     <MDBCardImage className='nav-logo ml-4 ml-lg-0' src={image} fluid alt='logo' />
+                    {loadingHide === false 
+                        ? <MDBCardImage className='nav-logo ml-4 ml-lg-0' src={image} fluid alt='logo' />
+                        : <Loading />}
                 </div>
                 <div className='nav-link-container'>
                     <div className='link-container'>
@@ -57,5 +68,4 @@ export default class LeftSideMenu extends Component {
             </div>
            
         )
-    }
 }
