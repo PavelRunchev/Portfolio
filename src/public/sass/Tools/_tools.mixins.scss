@@ -1,0 +1,8 @@
+@import '../Settings/settings.colors';
+
+
+@mixin box-shadow {
+    -webkit-box-shadow: 0px 0px 20px 0px $box-shadow;
+	-moz-box-shadow: 0px 0px 20px 0px $box-shadow;
+    box-shadow: 0px 0px 20px 0px $box-shadow;
+}

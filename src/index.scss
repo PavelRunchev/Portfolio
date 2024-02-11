@@ -1,7 +1,15 @@
 
 
-
 @import './public/sass/Generic/generic.reset';
 
 @import './public/sass/Settings/settings.fonts';
+@import './public/sass/Settings/settings.colors';
 @import './public/sass/Settings/settings.breakpoints';
+
+@import './public/sass/Tools/tools.mixins';
+@import './public/sass/Tools/tools.animations';
+
+@import './public/sass/Elements/elements.h1';
+@import './public/sass/Elements/elements.h3';
+@import './public/sass/Elements/elements.btn';
+@import './public/sass/Elements/elements.text.color';

@@ -1,0 +1,11 @@
+@import '../Settings/settings.breakpoints';
+
+h3 {
+    @include for-tablet-down {
+        font-size: 1.35rem;
+    }
+
+    @include for-tablet-landscape-up {
+        font-size: 1.75rem;
+    }
+}

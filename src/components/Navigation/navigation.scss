@@ -1,11 +1,12 @@
 @import '../../public/sass/Settings/settings.breakpoints';
+@import '../../public/sass/Settings/settings.colors';
 
 .navigation-container {
     position: fixed;
     top: 0px;
     right: 0px;
     z-index: 1000;
-    background-color: hsl(217deg, 53%, 48%) !important;
+    background-color: $primary-color-blue !important;
 
     @include for-tablet-up {
         max-width: calc(100% - 300px);
@@ -27,7 +28,7 @@
     }
 
     & .icon-bars {
-        color: hsl(0deg 0% 100%) !important;
+        color: $secondary-color-white !important;
     }
 
     & .logo-portfolio {
@@ -41,6 +42,7 @@
 
     & .nav-item {
         position: relative;
+        padding: 5px 0px;
         transition: all 0.3s ease-out;
 
         @include for-tablet-up {
@@ -49,6 +51,10 @@
     
         @include for-desktop-up {
             margin: 0px 5px;
+        }
+
+        &:hover {
+            background-color: $background-hover-color;
         }
     }
 
@@ -60,14 +66,14 @@
     & a {
         font-size: 20px;
         font-weight: 200 !important;
-        color: hsl(0deg 0% 100%) !important;
+        color: $secondary-color-white !important;
         padding-left: 0px !important;
         padding-right: 0px !important;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
 
         &:hover {
-            color: hsl(0deg 0% 95%) !important;
+            color: $secondary-color-white !important;
         }
 
         @include for-tablet-up {
@@ -91,16 +97,11 @@
         width: 100%;
         height: 2px;
         opacity: 1;
-        background-color: hsl(0deg 0% 95%) !important;
+        background-color: $secondary-color-white !important;
         transition: all 0.3s ease-out;
     }
    
     @include for-tablet-up {
-        //& .nav-about-link:hover ~ .about-under-line,
-        // & .nav-about-link:active ~ .about-under-line {
-        //     opacity: 1;
-        // }
-    
         & .nav-education-link:hover ~ .education-under-line {
             opacity: 1;
         }
@@ -124,7 +125,7 @@
 
     @include for-tablet-down {
         & .nav-item:hover {
-            background-color: hsla(0deg 0% 95% / 0.2);
+            background-color: $background-hover-color;
         }
     }
 }

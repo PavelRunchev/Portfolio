@@ -1,5 +1,10 @@
+@import '../../public/sass/Settings/settings.colors';
+@import '../../public/sass/Settings/settings.breakpoints';
+
+@import '../../public/sass/Tools/tools.mixins';
+
 .education-container {
-    margin-top: 100px;
+    margin-top: 50px;
 
     & #education {
         border-top: none !important;
@@ -24,5 +29,23 @@
         background-color: hsl(0deg, 0%, 0%);
         left: 0px;
         bottom: 0px;
+    }
+
+    & .education-softuni-image-container {
+        width: 780px;
+        height: 500px;
+        border-radius: 5px;
+        @include box-shadow;
+        overflow: hidden;
+
+        & .education-softuni-image {
+            cursor: pointer;
+            width: 780px !important;
+            height: 500px !important;
+        }
+
+        @include for-tablet-down {
+            width: 100%;
+        }
     }
 }
