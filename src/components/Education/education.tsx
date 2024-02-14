@@ -6,25 +6,27 @@ import { MDBCarousel, MDBCarouselItem, MDBCollapse, MDBBtn, MDBIcon, MDBCardImag
 import Image1 from '../../public/images/softuni/softuni-logo.jpg';
 import Image2 from '../../public/images/softuni/softuni-image.jpg';
 import Image3 from '../../public/images/softuni/leason.jpg';
-import Image4 from '../../public/images/softuni/softuni-nakov-inspiration-lab_16057863.jpg';
+import Image4 from '../../public/images/TU-rektorat1.jpg';
 
 import GraduationCertificate from '../../public/images/certificates/Diploma.jpg';
 
 export default function Education() {
     const [showGraduation, setGraduation] = useState(false);
+    const [showGraduationTUGabrovo, setGraduationTUGabrovo] = useState(false);
+
     return (
         <div className='education-container'>
-            <hr id="education"></hr>
+            <hr id="education" className='hr'></hr>
 
-            <div className='education-title-container mb-5'>
-                <h2 className='education-title mt-5'>EDUCATION</h2>
+            <div className='title-container mb-5'>
+                <h2 className='title mt-5'>EDUCATION</h2>
             </div>
 
             <div className='education-softuni-container'>
-                <h3>Software Engineering - <span className='text-color'>Software University</span></h3>
+                <h3>Software Engineering - <span className='text-color'>Software University</span> - Sofia</h3>
                 <div className='education-softuni-image-container my-4'>
-                    <MDBCarousel className='education-softuni-image-carousel'>
-                        <MDBCarouselItem itemId={1}>
+                    <MDBCarousel fade touch={true} className='education-softuni-image-carousel'>
+                        <MDBCarouselItem itemId={1} active="true">
                             <MDBCardImage className='education-softuni-image img-fluid rounded' src={Image1} fluid alt='image' />
                         </MDBCarouselItem>
                         <MDBCarouselItem itemId={2}>
@@ -32,9 +34,6 @@ export default function Education() {
                         </MDBCarouselItem>
                         <MDBCarouselItem itemId={3}>
                             <MDBCardImage className='education-softuni-image img-fluid rounded' src={Image3} fluid alt='image' />
-                        </MDBCarouselItem>
-                        <MDBCarouselItem itemId={4}>
-                            <MDBCardImage className='education-softuni-image img-fluid rounded' src={Image4} fluid alt='image' />
                         </MDBCarouselItem>
                     </MDBCarousel>
                 </div>
@@ -58,7 +57,23 @@ export default function Education() {
             <div className='education-tu-gabrovo-container'>
                 <h3>Technical University - <span className='text-color'>Gabrovo</span></h3>
                 <h3><span className='text-color'>Speciality</span> - Software and Computer Engineering</h3>
+                <h5>Higher Education - <span className='text-color'>Bachelor's Degree</span></h5>
+
+                <div className='education-softuni-image-container my-4'>
+                    <MDBCardImage className='education-softuni-image img-fluid rounded' src={Image4} fluid alt='image' />
+                </div>
+
+                <MDBBtn noRipple className='more-info-btn btn mb-3' onClick={() => setGraduationTUGabrovo(!showGraduationTUGabrovo)}>
+                    <MDBIcon fas icon='graduation-cap' className='mr-2'/>
+                    graduation certificate
+                </MDBBtn>
+                   
+                <MDBCollapse open={showGraduationTUGabrovo}>
+                    <MDBCardImage className='img-fluid rounded' src={GraduationCertificate} fluid alt='certificate' />
+                </MDBCollapse>
             </div>
+
+            <hr></hr>
         
         </div>
     )

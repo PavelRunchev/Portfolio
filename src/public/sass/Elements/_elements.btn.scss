@@ -3,10 +3,19 @@
 .btn {
     border: 1px solid $primary-color-blue;
     background-color: $primary-color-blue !important;
+    transition: all 0.3s ease-out;
 
     &:hover{
         color: $primary-color-blue !important;
         background-color: $secondary-color-white !important;
-        border: 1px solid $primary-color-blue;
     }
+
+    &:active {
+        color: $primary-color-blue !important;
+        background-color: $secondary-color-white !important;
+    }
+}
+
+.btn-primary:not([disabled]):not(.disabled):active {
+    background-color: $secondary-color-white !important;
 }

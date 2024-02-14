@@ -65,7 +65,7 @@ export default function Navigation() {
             </MDBNavbarItem>
 
             <MDBNavbarItem>
-              <a onClick={() => setAllUnderLines(qualificationShow, 'qualification')} className='nav-qualification-link' href='/#'>Qualification</a>
+              <a onClick={() => setAllUnderLines(qualificationShow, 'qualification')} className='nav-qualification-link' href='/#qualification'>Qualification</a>
               {qualificationShow ? <span className='qualification-under-line'></span> : null}
             </MDBNavbarItem>
 

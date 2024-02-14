@@ -6,45 +6,28 @@
 .education-container {
     margin-top: 50px;
 
-    & #education {
-        border-top: none !important;
-    }
-
-    & .education-title-container {
-        display: inline-block;
-        position: relative;
-        margin-top: 60px;
-    }
-
-    & .education-title {
-        display: inline-block;
-    }
-
-    & .education-title::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        background-color: hsl(0deg, 0%, 0%);
-        left: 0px;
-        bottom: 0px;
-    }
-
     & .education-softuni-image-container {
-        width: 780px;
-        height: 500px;
         border-radius: 5px;
         @include box-shadow;
         overflow: hidden;
 
         & .education-softuni-image {
             cursor: pointer;
-            width: 780px !important;
-            height: 500px !important;
         }
 
         @include for-tablet-down {
+            width: 100%;
+        }
+
+        @include for-tablet-up {
+            width: 100%;
+        }
+
+        @include for-desktop-up {
+            width: 780px;
+        }
+
+        @include for-phone-only {
             width: 100%;
         }
     }

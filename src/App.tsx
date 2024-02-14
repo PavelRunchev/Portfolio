@@ -12,11 +12,7 @@ function App() {
       <Navigation />
       <LeftSideMenu />
 
-      <div className="content-container">
-        <div className='empty-component'></div>
-        <Main />
-      </div>
-    
+      <Main />
     </div>
   );
 }

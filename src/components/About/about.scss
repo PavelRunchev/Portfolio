@@ -10,26 +10,6 @@
         margin-top: 50px;
     }
 
-    & .about-title-container {
-        display: inline-block;
-        position: relative;
-    }
-
-    & .about-title {
-        display: inline-block;
-    }
-
-    & .about-title::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        background-color: $third-color-black;
-        left: 0px;
-        bottom: 0px;
-    }
-
     & .more-info-container {
         margin-top: 30px;
 

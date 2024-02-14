@@ -11,7 +11,7 @@ export default function About() {
 
     return (
         <div className='about-container'>
-            <hr id="about"></hr>
+            <hr id="about" className='hr'></hr>
             <h1 className='about-firstname'>PAVEL <span className='text-color'>RUNCHEV</span></h1>
             <h3><MDBIcon fas icon='globe-europe' className='text-color'/> BULGARIA</h3>
             <h3><MDBIcon fas icon='map-marker-alt' className='text-color ml-1'/> GABROVO</h3>
@@ -25,8 +25,8 @@ export default function About() {
             
            
 
-            <div className='about-title-container mb-5'>
-                <h2 className='about-title mt-5'>ABOUT</h2>
+            <div className='title-container mb-5'>
+                <h2 className='title mt-5'>ABOUT</h2>
             </div>
            
             <p>I’m a passionate developer who tends to be mindful for the entire product lifetime. I really enjoy being part of a team which creates a friendly and helpful environment. I truly believe our software can make a profound impact for the end users.</p>

@@ -3,26 +3,23 @@
 
 .main-container {
     width: 100%;
-    padding: 20px 90px;
     margin-top: 20px;
-
-    @include for-tablet-up {
-        padding: 20px 50px;
-    }
-
-    @include for-tablet-down {
-        padding: 20px 30px;
-    }
 
     @include for-phone-only {
         padding: 5px 10px 0px 10px;
-        
+    }
+
+    @include for-tablet-portrait-up {
+        padding: 20px 20px 20px 280px;
+    }
+
+    @include for-tablet-up {
+        padding: 20px 20px 20px 330px;
     }
 
     @include for-desktop-up {
-        padding: 20px 90px;
+        padding: 20px 20px 20px 350px;
     }
-
 }
 
 .chevron-circle-left {
