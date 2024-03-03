@@ -1,4 +1,29 @@
+@import '../../public/sass/Settings/_settings.breakpoints';
 
 .qualification-container {
     margin-top: 50px;
 }
+
+.qualification-inner-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    justify-content: start;
+
+    @include for-tablet-up {
+        grid-template-columns: 100%;
+        justify-content: start;
+    }
+
+    @include for-desktop-up {
+        grid-template-columns: 70%;
+        justify-content: start;
+    }
+
+    @include for-big-desktop-up {
+        grid-template-columns: 25% 25% 25%;
+        justify-content: space-evenly;
+    }
+}
+

@@ -1,0 +1,76 @@
+@import '../../public/sass/Settings/_settings.colors';
+@import '../../public/sass/Settings/_settings.breakpoints';
+
+.skills-programming-language-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include for-tablet-down {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    @include for-tablet-up {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    @include for-big-desktop-up {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    & .skills-inner-container {
+        @include for-tablet-down {
+            margin-top: 30px;
+        }
+    
+        @include for-tablet-up {
+            margin-top: 30px;
+        }
+        @include for-big-desktop-up {
+            margin-top: 0px;
+        }
+    }
+
+    & > p {
+        font-size: 20px;
+    }
+
+    & > p > .gulp {
+        font-size: 26px !important;
+    }
+    
+}
+
+.skills-card-container {
+    width: 250px;
+    height: auto;
+}
+
+.skill-popover-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#skills-btn {
+    cursor: pointer;
+    font-size: 22px;
+    height: 30px !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: $third-color-black !important;
+    text-align: left !important;
+    padding: 0 !important;
+}
+
+.skills-gif {
+    width: 100%;
+    z-index: 1 !important;
+}

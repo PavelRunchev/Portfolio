@@ -1,0 +1,11 @@
+@import '../Settings/settings.colors';
+
+.link {
+    cursor: pointer;
+    color: $third-color-black;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        color: $third-color-black;
+    }
+}

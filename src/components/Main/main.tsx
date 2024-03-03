@@ -5,7 +5,10 @@ import './main.scss';
 
 import About from '../About/about';
 import Education from '../Education/education';
+import Skills from '../Skills/skills';
 import Qualification from '../Qualification/qualification';
+import Projects from '../Projects/projects';
+import DevelopmentEnvironments from '../Environments/development-environments';
 
 export default class Main extends Component {
     render() {
@@ -13,13 +16,10 @@ export default class Main extends Component {
             <div className='main-container'>
                 <About />
                 <Education />
-
+                <Skills />
                 <Qualification />
-                {/* <Routes>
-                    <Route path='/' element={<About />}/>
-                    <Route path='/about' element={<About />}/>
-                    <Route path='/education' element={<Education />}/>
-                </Routes> */}
+                <Projects />
+                <DevelopmentEnvironments />
             </div>
         )
     }

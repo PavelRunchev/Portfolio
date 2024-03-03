@@ -3,6 +3,8 @@ import './education.scss';
 
 import { MDBCarousel, MDBCarouselItem, MDBCollapse, MDBBtn, MDBIcon, MDBCardImage } from 'mdb-react-ui-kit';
 
+import TitleWrapper from '../../HOC/Title-Component/title';
+
 import Image1 from '../../public/images/softuni/softuni-logo.jpg';
 import Image2 from '../../public/images/softuni/softuni-image.jpg';
 import Image3 from '../../public/images/softuni/leason.jpg';
@@ -16,11 +18,7 @@ export default function Education() {
 
     return (
         <div className='education-container'>
-            <hr id="education" className='hr'></hr>
-
-            <div className='title-container mb-5'>
-                <h2 className='title mt-5'>EDUCATION</h2>
-            </div>
+            <TitleWrapper title={"EDUCATION"} hrID={"education"}/>
 
             <div className='education-softuni-container'>
                 <h3>Software Engineering - <span className='text-color'>Software University</span> - Sofia</h3>

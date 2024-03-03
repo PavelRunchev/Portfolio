@@ -1,0 +1,7 @@
+@import '../Settings/settings.colors';
+@import '../Tools/tools.mixins';
+
+.main-background {
+    background-color: $main-background-color !important;
+    border-radius: 5px;
+}

@@ -7,7 +7,7 @@ import './loading.scss';
 const Loading = () => {
     return (
         <div className="container-loading">
-            <MDBCardImage className='ml-4 ml-lg-0' src={loading} fluid alt='loading' />
+            <MDBCardImage className='ml-m-4 ml-lg-0' src={loading} fluid alt='loading' />
         </div>
     )
 }

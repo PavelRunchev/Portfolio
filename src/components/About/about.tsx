@@ -3,11 +3,10 @@ import React,  { useState } from 'react';
 import './about.scss';
 
 import { MDBCollapse, MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
+import TitleWrapper from '../../HOC/Title-Component/title';
 
 export default function About() {
     const [isOpen, setIsOpen] = useState(false);
-
-    
 
     return (
         <div className='about-container'>
@@ -23,11 +22,7 @@ export default function About() {
             <h3><MDBIcon fab icon='skype' className='text-color'/> raidersgb</h3>
             <h3 className='font-weight-bold'><MDBIcon fas icon='desktop' className='text-color'/> Full Stack Developer</h3>
             
-           
-
-            <div className='title-container mb-5'>
-                <h2 className='title mt-5'>ABOUT</h2>
-            </div>
+            <TitleWrapper title={"ABOUT"} hrID={"about"}/>
            
             <p>I’m a passionate developer who tends to be mindful for the entire product lifetime. I really enjoy being part of a team which creates a friendly and helpful environment. I truly believe our software can make a profound impact for the end users.</p>
             <div className='more-info-container'>

@@ -13,24 +13,13 @@ import {
 
 import './navigation.scss';
 
-export default function Navigation() {
+export default function Navigation(props: any) {
   const [openNav, setOpenNav] = useState(false);
   
-  const [aboutShow, setAbout] = useState(false);
-  const [educationShow, setEducation] = useState(false);
-  const [skillsShow, setSkills] = useState(false);
-  const [qualificationShow, setQualification] = useState(false);
-  const [projectsShow, setProjects] = useState(false);
-  const [EnvironmentsShow, setEnvironments] = useState(false);
-
-  function setAllUnderLines(targetLine: boolean, targetLink: string): void {
-      setAbout(targetLink === "about" ? !targetLine : false);
-      setEducation(targetLink === "education" ? !targetLine : false);
-      setSkills(targetLink === "skills" ? !targetLine : false);
-      setQualification(targetLink === "qualification" ? !targetLine : false);
-      setProjects(targetLink === "projects" ? !targetLine : false);
-      setEnvironments(targetLink === "environments" ? !targetLine : false);
-  }
+  //boolean values
+  const { aboutShow, educationShow, skillsShow, qualificationShow, projectsShow, environmentsShow } = props.allNavBarLinks;
+  //click nav functions
+  const { about, education, skills, qualification, projects, environments } = props.navFunctions;
 
   return (
     <nav className='navigation-container'>
@@ -50,33 +39,33 @@ export default function Navigation() {
         <MDBCollapse navbar open={openNav}>
           <MDBNavbarNav>
             <MDBNavbarItem>
-              <a onClick={() => setAllUnderLines(aboutShow, 'about')} className='nav-about-link' href='/#'>About</a>
+              <a onClick={(e) => about(e)} className='nav-about-link' href='/#'>About</a>
               {aboutShow ? <span className='about-under-line'></span> : null}
             </MDBNavbarItem>
 
             <MDBNavbarItem>
-              <a onClick={() => setAllUnderLines(educationShow, 'education')} className='nav-education-link' href='/#education'>Education</a>
+              <a onClick={(e) => education(e)} className='nav-education-link' href='/#education'>Education</a>
               {educationShow ? <span className='education-under-line'></span> : null}
             </MDBNavbarItem>
 
             <MDBNavbarItem>
-              <a onClick={() => setAllUnderLines(skillsShow, 'skills')} className='nav-skills-link' href='/#'>Skills</a>
+              <a onClick={(e) => skills(e)} className='nav-skills-link' href='/#skills'>Skills</a>
               {skillsShow ? <span className='skills-under-line'></span> : null}
             </MDBNavbarItem>
 
             <MDBNavbarItem>
-              <a onClick={() => setAllUnderLines(qualificationShow, 'qualification')} className='nav-qualification-link' href='/#qualification'>Qualification</a>
-              {qualificationShow ? <span className='qualification-under-line'></span> : null}
+              <a onClick={(e) => qualification(e)} className='nav-skills-link' href='/#qualification'>Qualification</a>
+              {qualificationShow ? <span className='skills-under-line'></span> : null}
             </MDBNavbarItem>
 
             <MDBNavbarItem>
-              <a onClick={() => setAllUnderLines(projectsShow, 'projects')} className='nav-projects-link' href='/#'>Projects</a>
-              {projectsShow ? <span className='projects-under-line'></span> : null}
+              <a onClick={(e) => projects(e)} className='nav-skills-link' href='/#projects'>Projects</a>
+              {projectsShow ? <span className='skills-under-line'></span> : null}
             </MDBNavbarItem>
 
             <MDBNavbarItem>
-              <a onClick={() => setAllUnderLines(EnvironmentsShow, 'environments')} className='nav-environments-link' href='/#'>Environments</a>
-              {EnvironmentsShow ? <span className='environments-under-line'></span> : null}
+              <a onClick={(e) => environments(e)} className='nav-skills-link' href='/#environments'>Environments</a>
+              {environmentsShow ? <span className='skills-under-line'></span> : null}
             </MDBNavbarItem>
            
           </MDBNavbarNav>

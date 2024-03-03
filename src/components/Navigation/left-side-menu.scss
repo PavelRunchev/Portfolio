@@ -84,7 +84,7 @@
     }
 
     & > .link-container > i {
-        opacity: 0;
+        opacity: 1;
         position: absolute;
         top: 5px;
         left: -20px;
@@ -93,29 +93,29 @@
         transition: all 0.3s ease-out;
     }
 
-    & .about-link:hover ~ .about-caret-right {
-        opacity: 1;
-    }
+    // & .about-link:hover ~ .about-caret-right {
+    //     opacity: 1;
+    // }
 
-    & .education-link:hover ~ .education-caret-right {
-        opacity: 1;
-    }
+    // & .education-link:hover ~ .education-caret-right {
+    //     opacity: 1;
+    // }
 
-    & .skills-link:hover ~ .skills-caret-right {
-        opacity: 1;
-    }
+    // & .skills-link:hover ~ .skills-caret-right {
+    //     opacity: 1;
+    // }
 
-    & .qualification-link:hover ~ .qualification-caret-right {
-        opacity: 1;
-    }
+    // & .qualification-link:hover ~ .qualification-caret-right {
+    //     opacity: 1;
+    // }
 
-    & .projects-link:hover ~ .projects-caret-right {
-        opacity: 1;
-    }
+    // & .projects-link:hover ~ .projects-caret-right {
+    //     opacity: 1;
+    // }
 
-    & .environments-link:hover ~ .environments-caret-right {
-        opacity: 1;
-    }
+    // & .environments-link:hover ~ .environments-caret-right {
+    //     opacity: 1;
+    // }
 }
 
 .author-container {
