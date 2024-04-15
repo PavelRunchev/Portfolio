@@ -1,9 +1,9 @@
 import React from 'react';
 import './projects.scss';
 
-import { MDBAccordion, MDBAccordionItem } from 'mdb-react-ui-kit';
-
-import TitleWrapper from '../../HOC/Title-Component/title';
+import TitleWrapper from '../../HOC/title';
+import projectData from '../../services/projects.data';
+import ProjectModel from './project-model';
 
 export default function Projects() {
     return (
@@ -11,32 +11,7 @@ export default function Projects() {
             <TitleWrapper title={"PROJECTS"} hrID={"projects"}/>
 
             <div className='projects-side-container'>
-            <MDBAccordion flush initialActive={1}>
-                <MDBAccordionItem collapseId={1} headerTitle='Accordion Item #1'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </MDBAccordionItem>
-                <MDBAccordionItem collapseId={2} headerTitle='Accordion Item #2'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </MDBAccordionItem>
-                <MDBAccordionItem collapseId={3} headerTitle='Accordion Item #3'>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                </MDBAccordionItem>
-                </MDBAccordion>
+                {projectData.map((el, i) => <ProjectModel key={i} data={el}/>)}
             </div>
         </div>
     )

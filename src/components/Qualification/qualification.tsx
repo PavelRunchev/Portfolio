@@ -3,20 +3,22 @@ import './qualification.scss';
 
 import { MDBBtn, MDBCollapse } from 'mdb-react-ui-kit';
 
-import SoftwareTechnologies from './Inner-components/softwareTechnologies';
-import JSFundamentals from './Inner-components/js-fundamentals';
-import JSAdvanced from './Inner-components/js-advanced';
-import JSApplication from './Inner-components/js-application';
-import ExpressJS from './Inner-components/express-js';
-import ReactJS from './Inner-components/react-js';
-import Angular from './Inner-components/angular';
+// import SoftwareTechnologies from './Inner-components/softwareTechnologies';
+// import JSFundamentals from './Inner-components/js-fundamentals';
+// import JSAdvanced from './Inner-components/js-advanced';
+// import JSApplication from './Inner-components/js-application';
+// import ExpressJS from './Inner-components/express-js';
+// import ReactJS from './Inner-components/react-js';
+// import Angular from './Inner-components/angular';
 
-import ProgrammingFundamentals from './Inner-components/programming-fundamentals';
-import CSharpAdvanced from './Inner-components/csharp-advanced';
-import Java from './Inner-components/java';
+// import ProgrammingFundamentals from './Inner-components/programming-fundamentals';
+// import CSharpAdvanced from './Inner-components/csharp-advanced';
+// import Java from './Inner-components/java';
 
-import DisciplineTable from './Inner-components/disciplineTable';
-import TitleWrapper from '../../HOC/Title-Component/title';
+import DisciplineTable from './disciplineTable';
+import TitleWrapper from '../../HOC/title';
+import QualificationModel from './qualification-model';
+import qualificationArray from '../../services/qualification.data';
 
 export default function Qualification() {
    
@@ -32,7 +34,8 @@ export default function Qualification() {
 
                 <h3 className='mb-2'>Software <span className='text-color'>University</span></h3>
                 <div className='qualification-inner-container'>
-                    <SoftwareTechnologies />
+                    {qualificationArray.map((el, index) => <QualificationModel key={index} data={el}/>)}
+                    {/* <SoftwareTechnologies />
                     <JSFundamentals />
                     <JSAdvanced />
                     <JSApplication />
@@ -42,7 +45,7 @@ export default function Qualification() {
 
                     <ProgrammingFundamentals />
                     <CSharpAdvanced />
-                    <Java />
+                    <Java /> */}
                 </div>
             </div>
 

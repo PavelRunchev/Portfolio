@@ -2,7 +2,7 @@ import React from 'react';
 import './development-environments.scss';
 
 import { MDBCardImage, MDBTooltip } from 'mdb-react-ui-kit';
-import TitleWrapper from '../../HOC/Title-Component/title';
+import TitleWrapper from '../../HOC/title';
 
 import VSCode from '../../public/tools image/vscode.jpg';
 import WebStorm from '../../public/tools image/webstorm-image.jpg';

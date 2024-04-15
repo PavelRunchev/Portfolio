@@ -3,7 +3,7 @@ import React,  { useState } from 'react';
 import './about.scss';
 
 import { MDBCollapse, MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
-import TitleWrapper from '../../HOC/Title-Component/title';
+import TitleWrapper from '../../HOC/title';
 
 export default function About() {
     const [isOpen, setIsOpen] = useState(false);

@@ -1,7 +1,7 @@
 import React from 'react';
 import './skills.scss';
 
-import TitleWrapper from '../../HOC/Title-Component/title';
+import TitleWrapper from '../../HOC/title';
 import SkillComponent from './skills-model';
 
 import { frontEndData } from '../../services/skills-data';

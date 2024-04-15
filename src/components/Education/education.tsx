@@ -3,7 +3,7 @@ import './education.scss';
 
 import { MDBCarousel, MDBCarouselItem, MDBCollapse, MDBBtn, MDBIcon, MDBCardImage } from 'mdb-react-ui-kit';
 
-import TitleWrapper from '../../HOC/Title-Component/title';
+import TitleWrapper from '../../HOC/title';
 
 import Image1 from '../../public/images/softuni/softuni-logo.jpg';
 import Image2 from '../../public/images/softuni/softuni-image.jpg';
