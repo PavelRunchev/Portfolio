@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 
 import './App.scss';
 
@@ -21,6 +21,44 @@ function App() {
   const [qualificationShowCaretRight, setQualificationShowCaretRight] = useState(false);
   const [projectsShowCaretRight, setProjectsShowCaretRight] = useState(false);
   const [environmentsShowCaretRight, setEnvironmentsShowCaretRight] = useState(false);
+
+  //scrolling navigation show current section
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      let scrollPercentage = ((document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100;
+
+      if(scrollPercentage <= 10) {
+        setAllUnderLinesInNavBar(aboutShow, aboutShowCaretRight, "about");
+        setAbout(true);
+        setAboutShowCaretRight(true);
+      } else if(scrollPercentage > 10 && scrollPercentage <= 40) {
+        setAllUnderLinesInNavBar(educationShow, educationShowCaretRight, "education");
+        setEducation(true);
+        setEducationShowCaretRight(true);
+      } else if(scrollPercentage > 40 && scrollPercentage <= 60) {
+        setAllUnderLinesInNavBar(skillsShow, skillsShowCaretRight, "skills");
+        setSkills(true);
+        setSkillsShowCaretRight(true);
+      } else if(scrollPercentage > 60 && scrollPercentage <= 80) {
+        setAllUnderLinesInNavBar(qualificationShow, qualificationShowCaretRight, "qualification");
+        setQualification(true);
+        setQualificationShowCaretRight(true);
+      } else if(scrollPercentage > 80 && scrollPercentage <= 96) {
+        setAllUnderLinesInNavBar(projectsShow, projectsShowCaretRight, "projects"); 
+        setProjects(true);
+        setProjectsShowCaretRight(true);
+      } else if(scrollPercentage > 96 && scrollPercentage <= 100) {
+        setAllUnderLinesInNavBar(environmentsShow, environmentsShowCaretRight, "environments");
+        setEnvironments(true);
+        setEnvironmentsShowCaretRight(true);
+      }
+    });
+  }, [aboutShow, educationShow, skillsShow, qualificationShow, projectsShow, environmentsShow,
+    aboutShowCaretRight, educationShowCaretRight, skillsShowCaretRight, qualificationShowCaretRight,
+    projectsShowCaretRight, environmentsShowCaretRight
+  ]);
+
+
 
   //set curent target link (nav or side-menu): true or false!
   function setAllUnderLinesInNavBar(targetMenuLink: boolean, targetSideBarLink: boolean, targetLink: string): void {

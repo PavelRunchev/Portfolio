@@ -1,0 +1,40 @@
+@import '../../public/sass/Settings/_settings.breakpoints';
+@import '../../public/sass/Settings/_settings.colors';
+
+.qualification-model-container {
+    width: 100%;
+}
+
+.link-title {
+    width: 100% !important;
+}
+
+.qualification-sertificate-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.btn-close {
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        color: $primary-color-blue;
+    }
+}
+
+.modal-footer {
+    height: 50px;
+}
+
+h5 {
+    @include for-tablet-down {
+        font-size: 20px;
+    }
+
+    @include for-tablet-up {
+        font-size: 26px;
+    }
+}
