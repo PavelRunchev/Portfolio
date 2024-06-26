@@ -35,17 +35,6 @@ export default function Qualification() {
                 <h3 className='mb-2'>Software <span className='text-color'>University</span></h3>
                 <div className='qualification-inner-container'>
                     {qualificationArray.map((el, index) => <QualificationModel key={index} data={el}/>)}
-                    {/* <SoftwareTechnologies />
-                    <JSFundamentals />
-                    <JSAdvanced />
-                    <JSApplication />
-                    <ExpressJS />
-                    <ReactJS />
-                    <Angular />
-
-                    <ProgrammingFundamentals />
-                    <CSharpAdvanced />
-                    <Java /> */}
                 </div>
             </div>
 
