@@ -22,7 +22,7 @@
     
     & table {
         cursor: pointer;
-        @include box-shadow;
+        @include table-shadow;
         border-radius: 5px;
         overflow: hidden;
 
