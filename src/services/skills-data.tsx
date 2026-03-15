@@ -11,6 +11,9 @@ import CSS3 from '../public/Gifs/css3.gif';
 import SASS from '../public/Gifs/scss.gif';
 import Bootstrap5 from '../public/Gifs/bootstrap.gif';
 
+import ReactNative from '../public/Gifs/react-native-development-top-5-reasons-advantages-to-choose-for-your-business.gif';
+import Framework7 from '../public/Gifs/framework7-alt.gif';
+
 import NodeJS from '../public/Gifs/node-js.gif';
 import ExpressJS from '../public/Gifs/express.gif';
 import PHP from '../public/Gifs/php-script.gif';
@@ -21,6 +24,10 @@ import Bower from '../public/Gifs/bower.gif';
 
 import MongoDB from '../public/Gifs/mongodb.gif';
 import MySQL from '../public/Gifs/MySQL.gif';
+
+import firebase from '../public/Gifs/firebaseload.gif';
+import heroku from '../public/Gifs/heroku-1.gif';
+import docker from '../public/Gifs/docker.gif';
 
 export const frontEndData: Array<any> = [
     { id: 100, typeIcon: 'fab', icon: 'js', title: 'JavaScript', gifName: JS },
@@ -35,6 +42,11 @@ export const frontEndData: Array<any> = [
     { id: 109, typeIcon: 'fab', icon: 'css3', title: 'CSS3', gifName: CSS3 },
     { id: 110, typeIcon: 'fab', icon: 'sass', title: 'SASS', gifName: SASS },
     { id: 111, typeIcon: 'fab', icon: 'bootstrap', title: 'Bootstrap 5', gifName: Bootstrap5 },
+];
+
+export const mobileData: Array<any> = [
+    { id: 600, typeIcon: 'fab', icon: 'react', title: 'React Native', gifName: ReactNative },
+    { id: 601, typeIcon: 'fas', icon: 'mobile-alt', title: 'Framework7', gifName: Framework7 }
 ];
 
 export const backEndData: Array<any> = [
@@ -52,5 +64,11 @@ export const packageManagerData: Array<any> = [
 export const databaseData: Array<any> = [
     { id: 400, typeIcon: 'fas', icon: 'database', title: 'NoSQL Database MongoDB (BSON documents)', gifName: MongoDB },
     { id: 401, typeIcon: 'fas', icon: 'database', title: 'Relational database MySQL (MyISAM)', gifName: MySQL }
+];
+
+export const cloudsData: Array<any> = [
+    { id: 500, typeIcon: 'fas', icon: 'fire', title: 'Firebase - RealTime DB, Storage', gifName: firebase },
+    { id: 501, typeIcon: 'fab', icon: 'hire-a-helper', title: 'Heroku', gifName: heroku },
+    { id: 502, typeIcon: 'fab', icon: 'docker', title: 'Docker Build Cloud', gifName: docker }
 ];
 

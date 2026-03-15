@@ -6,7 +6,7 @@ export default function SkillComponent(props: any): React.JSX.Element {
 
     return (
         <div className='skill-popover-container'>
-            {typeIcon === 'fab' 
+            {title === 'Framework7' ? <span className='text-color'>F7</span> : typeIcon === 'fab' 
                 ? <MDBIcon fab icon={icon} className='text-color' size='2x'/>
                 : <MDBIcon fas icon={icon} className='text-color' size='2x'/>
             }

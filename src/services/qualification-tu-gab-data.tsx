@@ -104,7 +104,52 @@ const tuGabData: Array<any> = [
         discipline: "Project by NoSQL - selectable subject",
         description: "Big Data, big structure and no structure data, BigData processing in MongoDB, Examples",
         grade: 6
-    }
+    },
+    {
+        discipline: "Documentation and prezentation of software projects - selectable subject",
+        description: "Presentation, UML diagrams, the software development cycle",
+        grade: 6
+    },
+    {
+        discipline: "Artificial Intelligence (AI) - selectable subject",
+        description: "Predicate logic, Neural networks",
+        grade: 6
+    },
+    {
+        discipline: "Computer Peripherals - selectable subject",
+        description: "CAD/CAM systems, Interfaces, Display, Ploters, Printers",
+        grade: 6
+    },
+    {
+        discipline: "Computer Peripherals - selectable subject",
+        description: "CAD/CAM systems, Interfaces, Display, Ploters, Printers",
+        grade: 6
+    },
+    {
+        discipline: "Software quality testing - selectable subject",
+        description: "Bug tacking systems, Testing techniques, Test cases, Selenium, Postman, RestSharp, WebDriver, Appium Mobile, Appium Desktop",
+        grade: 6
+    },
+    {
+        discipline: "Functional Programming - selectable subject",
+        description: "C# - Anonimous funtions, Delegate, Actions, Functions, Predicate, High order function, Tuple, LINQ, Recursion",
+        grade: 6
+    },
+    {
+        discipline: "Internet of Things - selectable subject",
+        description: "Data analysis, Software is everywhere, Cloud computing, IoT Fundamentals",
+        grade: 6
+    },
+    {
+        discipline: "Modeling and visualization of objects - selectable subject",
+        description: "3D modeling, Approaches to Geometric Modeling, Constructive solid geometry, Polygon mesh, Shading",
+        grade: 6
+    },
+    {
+        discipline: "Distributed Programming - selectable subject",
+        description: "Virtualization, Vercel, Containerization, IPFS Distributed File System, Blockchain, Decentalized Apps, Message Brokers",
+        grade: 5
+    },
 ];
 
 export default tuGabData;

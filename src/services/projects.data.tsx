@@ -132,6 +132,21 @@ const projectData: any[] = [
         grade: 'has not been sertificate!',
         sertificate: 'has not been sertificate!'
     },
+
+     {
+        typeIcon: 'fab',
+        iconName: 'python',
+        title: 'PYTHON PROJECT',
+        discipline: 'Data Mining',
+        description: 'For implement in my simple web project I used following tools',
+        technologies: ['Python 3.13.9', 'NiceGUI', 'Pandas', 'Sklearn', 'Matplotlib', 'Numpy', 'Render Cloud'],
+        environment: 'PyCharm',
+        projectName: 'Predicting CPU Performance!',
+        deployLink: 'https://predicting-cpu-performance.onrender.com',
+        toGithub: 'https://github.com/PavelRunchev/Predicting-CPU-Performance',
+        grade: 'has not been sertificate!',
+        sertificate: 'has not been sertificate!'
+    },
 ];
 
 export default projectData;

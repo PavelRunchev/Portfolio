@@ -1,23 +1,8 @@
 import React from 'react';
 import './development-environments.scss';
 
-import { MDBCardImage, MDBTooltip } from 'mdb-react-ui-kit';
+import { MDBTypography } from 'mdb-react-ui-kit';
 import TitleWrapper from '../../HOC/title';
-
-import VSCode from '../../public/tools image/vscode.jpg';
-import WebStorm from '../../public/tools image/webstorm-image.jpg';
-import MongoDB from '../../public/tools image/mongodb.png';
-
-import VS from '../../public/tools image/visual-studio.png';
-import SQLServerManagementStudio from '../../public/tools image/SQL Server Management Studio.png';
-
-import IntelliJ from '../../public/tools image/intellij-idea.jpg';
-import Eclipse from '../../public/tools image/eclipse-development-environment-netbeans-.png';
-import ApacheNetBeans from '../../public/tools image/apache-netbeans.png';
-import MySQL from '../../public/tools image/MySQL.png';
-
-import PHPStorm from '../../public/tools image/phpstorm.png';
-import WarmServer from '../../public/tools image/wamp-server.jpg';
 
 export default function DevelopmentEnvironments() {
     return (
@@ -26,48 +11,43 @@ export default function DevelopmentEnvironments() {
              
             <div className='development-environments-side-container'>
                 <div className='development-environments-inner-container'>
-                    <MDBTooltip tag='a' wrapperProps={{ href: '#' }} title="VS Code">
-                        <MDBCardImage className='development-environments-tools-image' src={VSCode} fluid alt='tools' />
-                    </MDBTooltip>
-                    <MDBTooltip tag='a' wrapperProps={{ href: '#' }} title="Web Storm">
-                        <MDBCardImage className='development-environments-tools-image' src={WebStorm} fluid alt='tools' />
-                    </MDBTooltip>
-                    <MDBTooltip tag='a' wrapperProps={{ href: '#' }} title="MongoDB">
-                        <MDBCardImage className='development-environments-tools-image' src={MongoDB} fluid alt='tools' />
-                    </MDBTooltip>
+                    <MDBTypography tag='h3' className='title-environments title-js'>Java Script</MDBTypography>
+                    <MDBTypography tag='h4'>VS <span className='text-color'>Code</span></MDBTypography>
+                    <MDBTypography tag='h4'>Web <span className='text-color'>Storm</span></MDBTypography>
+                    <MDBTypography tag='h4'>MongoDB <span className='text-color'>Compass</span></MDBTypography>
                 </div>
 
                 <div className='development-environments-inner-container'>
-                    <MDBTooltip tag='a' wrapperProps={{ href: '#' }} title="Visual Studio">
-                        <MDBCardImage className='development-environments-tools-image' src={VS} fluid alt='tools' />
-                    </MDBTooltip>
-                    <MDBTooltip tag='a' wrapperProps={{ href: '#' }} title="SQL Server">
-                        <MDBCardImage className='development-environments-tools-image' src={SQLServerManagementStudio} fluid alt='tools' />
-                    </MDBTooltip>
+                    <MDBTypography tag='h3' className='title-environments title-csharp'>C#</MDBTypography>
+                    <MDBTypography tag='h4'>Visual <span className='text-color'>Studio</span></MDBTypography>
+                    <MDBTypography tag='h4'>SQL <span className='text-color'>Server</span></MDBTypography>
                 </div>
 
                 <div className='development-environments-inner-container'>
-                    <MDBTooltip tag='a' wrapperProps={{ href: '#' }} title="IntelliJ IDEA">
-                        <MDBCardImage className='development-environments-tools-image' src={IntelliJ} fluid alt='tools' />
-                    </MDBTooltip>
-                    <MDBTooltip tag='a' wrapperProps={{ href: '#' }} title="Eclipse NetBeans">
-                        <MDBCardImage className='development-environments-tools-image' src={Eclipse} fluid alt='tools' />
-                    </MDBTooltip>
-                    <MDBTooltip tag='a' wrapperProps={{ href: '#' }} title="Apache NetBeans">
-                        <MDBCardImage className='development-environments-tools-image' src={ApacheNetBeans} fluid alt='tools' />
-                    </MDBTooltip>
-                    <MDBTooltip tag='a' wrapperProps={{ href: '#' }} title="MySQL">
-                        <MDBCardImage className='development-environments-tools-image' src={MySQL} fluid alt='tools' />
-                    </MDBTooltip>
+                    <MDBTypography tag='h3' className='title-environments title-java'>Java</MDBTypography>
+                    <MDBTypography tag='h4'>IntelliJ <span className='text-color'>IDEA</span></MDBTypography>
+                    <MDBTypography tag='h4'>Eclipse <span className='text-color'>NetBeans</span></MDBTypography>
+                    <MDBTypography tag='h4'>Apache <span className='text-color'>NetBeans</span></MDBTypography>
+                    <MDBTypography tag='h4'>MySQL</MDBTypography>
                 </div>
 
                 <div className='development-environments-inner-container'>
-                    <MDBTooltip tag='a' wrapperProps={{ href: '#' }} title="PHP Storm">
-                        <MDBCardImage className='development-environments-tools-image' src={PHPStorm} fluid alt='tools' />
-                    </MDBTooltip>
-                    <MDBTooltip tag='a' wrapperProps={{ href: '#' }} title="WarmServer">
-                        <MDBCardImage className='development-environments-tools-image' src={WarmServer} fluid alt='tools' />
-                    </MDBTooltip>
+                    <MDBTypography tag='h3' className='title-environments title-php'>PHP Script</MDBTypography>
+                    <MDBTypography tag='h4'>PHP <span className='text-color'>Storm</span></MDBTypography>
+                    <MDBTypography tag='h4'>Warm <span className='text-color'>Server</span></MDBTypography>
+                </div>
+
+                <div className='development-environments-inner-container'>
+                    <MDBTypography tag='h3' className='title-environments title-python'>Python</MDBTypography>
+                    <MDBTypography tag='h4'>PyCharm <span className='text-color'>JetBrains</span></MDBTypography>
+                </div>
+
+                <div className='development-environments-inner-container'>
+                    <MDBTypography tag='h3' className='title-environments title-js'>CNC Environment</MDBTypography>
+                    <MDBTypography tag='h4'>Bricks <span className='text-color'>CAD</span></MDBTypography>
+                    <MDBTypography tag='h4'>NX <span className='text-color'>Siemens</span> CAD/CAM</MDBTypography>
+                    <MDBTypography tag='h4'>Win<span className='text-color'>Tool</span></MDBTypography>
+                    <MDBTypography tag='h4'>SAP <span className='text-color'>Software</span> Solutions</MDBTypography>
                 </div>
             </div>
         </div>

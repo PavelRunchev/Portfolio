@@ -12,6 +12,8 @@ import Image4 from '../../public/images/TU-rektorat1.jpg';
 
 import GraduationCertificate from '../../public/images/certificates/Diploma.jpg';
 
+import DiplomaBachalors from './diploma-flip-book';
+
 export default function Education() {
     const [showGraduation, setGraduation] = useState(false);
     const [showGraduationTUGabrovo, setGraduationTUGabrovo] = useState(false);
@@ -67,7 +69,7 @@ export default function Education() {
                 </MDBBtn>
                    
                 <MDBCollapse open={showGraduationTUGabrovo}>
-                    <MDBCardImage className='img-fluid rounded' src={GraduationCertificate} fluid alt='certificate' />
+                    <DiplomaBachalors />
                 </MDBCollapse>
             </div>
 

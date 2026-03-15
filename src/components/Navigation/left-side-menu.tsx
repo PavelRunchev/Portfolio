@@ -84,8 +84,8 @@ export default function LeftSideMenu(props: any) {
 
                 <div className='author-container'>
                     <p>Powered by Pavel Runchev</p>
-                    <p>Used technologies: <MDBIcon fab icon="react" /> <MDBIcon fab icon="bootstrap" /> <MDBIcon fab icon="sass" /></p>
-                    <p>© 2019-2024</p>
+                    <p><MDBIcon fab icon="react" /> <MDBIcon fab icon="bootstrap" /> <MDBIcon fab icon="sass" /></p>
+                    <p>© 2019-2026</p>
                     <p>All right reserved!</p>
                 </div>
             </div>

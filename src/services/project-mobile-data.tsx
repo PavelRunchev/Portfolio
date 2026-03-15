@@ -11,7 +11,7 @@ const projectMobileData: any[] = [
         environment: 'VS Code',
         projectName: 'Traffic Route',
         platforms: 'Android, iOS, Windows',
-        download: './public/download/ArgisMapSDK-app-debug.zip',
+        download: '/ArgisMapSDK-app-debug.zip',
         toGithub: 'https://github.com/PavelRunchev/Traffic-route/tree/master',
         grade: 'none'
     },
@@ -26,7 +26,7 @@ const projectMobileData: any[] = [
         environment: 'VS Code',
         projectName: 'Mobile Sensors',
         platforms: 'Android, iOS, Windows',
-        download: './public/download/mobile-sensors-app-debug.zip',
+        download: '/mobile-sensors-app-debug.zip',
         toGithub: 'https://github.com/PavelRunchev/Mobile-Sensors/tree/master',
         grade: 'none'
     },

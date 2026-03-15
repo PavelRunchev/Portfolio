@@ -5,9 +5,11 @@ import TitleWrapper from '../../HOC/title';
 import SkillComponent from './skills-model';
 
 import { frontEndData } from '../../services/skills-data';
+import { mobileData } from '../../services/skills-data';
 import { backEndData } from '../../services/skills-data';
 import { packageManagerData } from '../../services/skills-data';
 import { databaseData } from '../../services/skills-data';
+import { cloudsData } from '../../services/skills-data';
 
 export default function Skills() {
 
@@ -23,6 +25,11 @@ export default function Skills() {
                         <h4 className='mt-3'><span className='text-color'>Front-End</span> Technologies</h4>
                         {frontEndData.map(el => <SkillComponent key={el.id} data={el}/>)}
                     </div>
+
+                    <div className='skills-inner-container'>
+                        <h4 className='mt-3'><span className='text-color'>Mobile</span> Technologies</h4>
+                        {mobileData.map(el => <SkillComponent key={el.id} data={el}/>)}
+                    </div>
                   
                     <div className='skills-inner-container'>
                         <h4 className='mt-3'><span className='text-color'>Back-End</span> Technologies</h4>
@@ -37,6 +44,11 @@ export default function Skills() {
                     <div className='skills-inner-container'>
                         <h4 className='mt-3'><span className='text-color'>Typese</span> Database</h4>
                         {databaseData.map(el => <SkillComponent key={el.id} data={el}/>)}
+                    </div>
+
+                    <div className='skills-inner-container'>
+                        <h4 className='mt-3'><span className='text-color'>Cloud</span> Technologies</h4>
+                        {cloudsData.map(el => <SkillComponent key={el.id} data={el}/>)}
                     </div>
                 </div>
             </div>
